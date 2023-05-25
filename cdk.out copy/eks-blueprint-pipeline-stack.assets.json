@@ -1,0 +1,20 @@
+{
+  "version": "31.0.0",
+  "files": {
+    "5e4f31a9efb91bac070a81e2b00ff181f90d395361304ccd009d4e3bbb4e2b2a": {
+      "source": {
+        "path": "eks-blueprint-pipeline-stack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "643824552215-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-643824552215-us-east-1",
+          "objectKey": "5e4f31a9efb91bac070a81e2b00ff181f90d395361304ccd009d4e3bbb4e2b2a.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-file-publishing-role-643824552215-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

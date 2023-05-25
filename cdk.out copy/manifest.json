@@ -1,0 +1,271 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "assembly-eks-blueprint-pipeline-stack-dev-us-east-1": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-eks-blueprint-pipeline-stack-dev-us-east-1",
+        "displayName": "eks-blueprint-pipeline-stack/dev-us-east-1"
+      }
+    },
+    "assembly-eks-blueprint-pipeline-stack-test-us-east-1": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-eks-blueprint-pipeline-stack-test-us-east-1",
+        "displayName": "eks-blueprint-pipeline-stack/test-us-east-1"
+      }
+    },
+    "assembly-eks-blueprint-pipeline-stack-prod-us-east-1": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-eks-blueprint-pipeline-stack-prod-us-east-1",
+        "displayName": "eks-blueprint-pipeline-stack/prod-us-east-1"
+      }
+    },
+    "eks-blueprint-pipeline-stack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "eks-blueprint-pipeline-stack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "eks-blueprint-pipeline-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://643824552215/us-east-1",
+      "properties": {
+        "templateFile": "eks-blueprint-pipeline-stack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-deploy-role-643824552215-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-cfn-exec-role-643824552215-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-643824552215-us-east-1/5e4f31a9efb91bac070a81e2b00ff181f90d395361304ccd009d4e3bbb4e2b2a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "eks-blueprint-pipeline-stack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-lookup-role-643824552215-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "eks-blueprint-pipeline-stack.assets"
+      ],
+      "metadata": {
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineArtifactsBucket59354A9F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineArtifactsBucketPolicy3F01CBD5"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineRole6C4166A7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineRoleDefaultPolicy5D8C1491"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipeline5E17F68D"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Source/zuberua_cdk-eks-blueprints-patterns/WebhookResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineSourcezuberuacdkeksblueprintspatternsWebhookResource4BDC0BF8"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Build/eks-blueprint-pipeline-synth/CdkBuildProject/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineBuildeksblueprintpipelinesynthCdkBuildProjectRole7E7C89D3"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Build/eks-blueprint-pipeline-synth/CdkBuildProject/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineBuildeksblueprintpipelinesynthCdkBuildProjectRoleDefaultPolicy8256C7AA"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/Build/eks-blueprint-pipeline-synth/CdkBuildProject/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelineBuildeksblueprintpipelinesynthCdkBuildProject1C702758"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Pipeline/dev-test/manual-approval-before-production/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinePipelinedevtestmanualapprovalbeforeproductionCodePipelineActionRole4705D9AD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/CodeBuildActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineCodeBuildActionRoleFD908EA2"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/CodeBuildActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineCodeBuildActionRoleDefaultPolicy57029C7F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/UpdatePipeline/SelfMutation/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineUpdatePipelineSelfMutationRoleDD999090"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/UpdatePipeline/SelfMutation/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineUpdatePipelineSelfMutationRoleDefaultPolicy6B01447B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/UpdatePipeline/SelfMutation/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineUpdatePipelineSelfMutation049C8096"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileRole1179D434"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileRoleDefaultPolicyBA9CC975"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset1BB2638A0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset10/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset1009A64A13"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset11/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset1156FBF515"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset12/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset127364887C"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset13/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset132090514F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset14/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset14D8CD29D0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset24412EC1D"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset3/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset3D54B91CE"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset4/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset4168F03AB"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset5/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset5F176EF62"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset6/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset65456EB1B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset7/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset7F50DDBA6"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset8/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset80E73C96D"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/eks-blueprint-pipeline/Assets/FileAsset9/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelineAssetsFileAsset90507DC3C"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "eks-blueprint-pipeline-stack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,1067 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://643824552215/us-east-1",
+      "properties": {
+        "templateFile": "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808.template.json",
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-deploy-role-643824552215-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-cfn-exec-role-643824552215-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-643824552215-us-east-1/ab59a77626b5698aa68f09af767e729b7d21995886dfb92e92a967b6d82f0927.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::643824552215:role/cdk-hnb659fds-lookup-role-643824552215-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "test-us-east-1-test-us-east-1-blueprint"
+      },
+      "dependencies": [
+        "eksblueprintpipelinestacktestuseast1testuseast1blueprintFFC83808.assets"
+      ],
+      "metadata": {
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcDE5DE960"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1Subnet6C0D91FB"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1RouteTable92982FBE"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1RouteTableAssociation9C3ADAEA"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1DefaultRouteDDCE28A8"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1EIP33ADCC9B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet1NATGatewayA011F999"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2Subnet8CC0BDE7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2RouteTableBFAE722F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2RouteTableAssociationE8DFC003"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2DefaultRouteF1468CAD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2EIP929BC440"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet2NATGatewayF9B0A4AD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3SubnetB8C04ED2"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3RouteTableC40C7FF4"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3RouteTableAssociationFFA1FC37"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3DefaultRouteA2CADAF2"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3EIPD22DCE2B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PublicSubnet3/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPublicSubnet3NATGatewayF1A8C460"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet1Subnet7714913F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet1RouteTableEFFA1FB7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet1RouteTableAssociation4AE0316E"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet1DefaultRoute7F5BEAE8"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet2SubnetD2C6A77E"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet2RouteTableBB826D04"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet2RouteTableAssociation9D4FA226"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet2DefaultRouteA17E9648"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet3Subnet6B348430"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet3RouteTableD3A5C5EF"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet3RouteTableAssociationF1EF1421"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/PrivateSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcPrivateSubnet3DefaultRoute7B403BF2"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcIGW45607E32"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintvpcVPCGW870ACB79"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint-kms-key/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintkmskeyADFD49DE"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/kubectllayer25/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "kubectllayer2595F4425A"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintRoleC47CCA79"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/ControlPlaneSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintControlPlaneSecurityGroupCDD0BA86"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Resource/CreationRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintCreationRoleBA0F17CF"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Resource/CreationRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintCreationRoleDefaultPolicy8A0EFDC1"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Resource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprint5D701BC1"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/KubectlReadyBarrier": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintKubectlReadyBarrierCBEAFCB1"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/ClusterName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintClusterName7E11318B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/MastersRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintMastersRoleC7BAAEFF"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/AwsAuth/manifest/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintAwsAuthmanifest5EB99E17"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/ConfigCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintConfigCommand31D29054"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/GetTokenCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintGetTokenCommand90FA2319"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Nodegroupprimary-mng-green-ng/NodeGroupRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintNodegroupprimarymnggreenngNodeGroupRoleA3C6183B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/Nodegroupprimary-mng-green-ng/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintNodegroupprimarymnggreenngEA295D63"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/aws-load-balancer-controller/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintawsloadbalancercontrollerConditionJson6E5B832C"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/aws-load-balancer-controller/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintawsloadbalancercontrollerRole4BE88D25"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/aws-load-balancer-controller/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintawsloadbalancercontrollerRoleDefaultPolicyCE068F37"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/aws-load-balancer-controller/manifest-aws-load-balancer-controllerServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintawsloadbalancercontrollermanifestawsloadbalancercontrollerServiceAccountResource2D4B98DA"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/OpenIdConnectProvider/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintOpenIdConnectProviderDBAEF7AF"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-aws-load-balancer-controller/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartawsloadbalancercontrollerEACBAB2B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-blueprints-cert-manager-addon/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartblueprintscertmanageraddon72B0828E"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/adot-managed-policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintadotmanagedpolicyE27C1076"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/adot-collector-sa/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintadotcollectorsaConditionJson3A0BD841"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/adot-collector-sa/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintadotcollectorsaRole7720C6AD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/adot-collector-sa/manifest-adot-collector-saServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintadotcollectorsamanifestadotcollectorsaServiceAccountResourceEFCBCBDD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-SecretsStoreCSIDriver/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartSecretsStoreCSIDriver7B454069"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/manifest-SecretsStoreCsiDriverProviderAws/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintmanifestSecretsStoreCsiDriverProviderAws25025888"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-nginx-ingress/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartnginxingressE5A4AA79"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/appmesh-controller/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintappmeshcontrollerConditionJsonC0647CA9"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/appmesh-controller/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintappmeshcontrollerRole47103139"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/appmesh-controller/manifest-appmesh-controllerServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintappmeshcontrollermanifestappmeshcontrollerServiceAccountResourceA63D678B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-appmesh-controller/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartappmeshcontroller8A608DA7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-calico-operator/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartcalicooperatorC4FB06C8"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-metrics-server/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartmetricsserver6F0F2F26"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/blueprints-addon-cluster-autoscaler-managed-policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintblueprintsaddonclusterautoscalermanagedpolicy13CB4C59"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/blueprints-addon-cluster-autoscaler-sa/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintblueprintsaddonclusterautoscalersaConditionJsonBBCF6BA9"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/blueprints-addon-cluster-autoscaler-sa/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintblueprintsaddonclusterautoscalersaRoleE0D4CD92"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/blueprints-addon-cluster-autoscaler-sa/manifest-blueprints-addon-cluster-autoscaler-saServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintblueprintsaddonclusterautoscalersamanifestblueprintsaddonclusterautoscalersaServiceAccountResourceA9E0C78D"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-cluster-autoscaler/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartclusterautoscalerAAE37AAA"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/adot-collector-cloudwatch/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintadotcollectorcloudwatch04D07823"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/xray-account/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintxrayaccountConditionJsonAE6957D0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/xray-account/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintxrayaccountRole663ED1E4"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/xray-account/manifest-xray-accountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintxrayaccountmanifestxrayaccountServiceAccountResource57492083"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/argo-cd-server/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintargocdserverConditionJsonA4AA0FF3"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/argo-cd-server/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintargocdserverRoleF3924E01"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/argo-cd-server/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintargocdserverRoleDefaultPolicy4F0774C3"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/argo-cd-server/manifest-argo-cd-serverServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintargocdservermanifestargocdserverServiceAccountResourceA37EA863"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/chart-argocd-addon/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintchartargocdaddon6D387E75"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/manifest-blueprints-secret/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintmanifestblueprintssecret9A376204"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/frontend-test-service-account/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintfrontendtestserviceaccountConditionJson837255E5"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/frontend-test-service-account/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintfrontendtestserviceaccountRole82991B95"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/frontend-test-service-account/manifest-frontend-test-service-accountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintfrontendtestserviceaccountmanifestfrontendtestserviceaccountServiceAccountResourceD214FE20"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-nodejs-test-service-account/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendnodejstestserviceaccountConditionJsonA5ADFAFB"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-nodejs-test-service-account/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendnodejstestserviceaccountRole55751177"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-nodejs-test-service-account/manifest-backend-nodejs-test-service-accountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendnodejstestserviceaccountmanifestbackendnodejstestserviceaccountServiceAccountResource8A68287A"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-crystal-test-service-account/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendcrystaltestserviceaccountConditionJson853670A4"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-crystal-test-service-account/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendcrystaltestserviceaccountRole90A0A8B7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/backend-crystal-test-service-account/manifest-backend-crystal-test-service-accountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintbackendcrystaltestserviceaccountmanifestbackendcrystaltestserviceaccountServiceAccountResource264F5D4E"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/test-us-east-1-blueprint/manifest-bootstrap-apps/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "testuseast1blueprintmanifestbootstrapappsA8088E4A"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/NodeProxyAgentLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NodeProxyAgentLayer924C1971"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandlerServiceRole15A26729"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandlerServiceRoleDefaultPolicyC57085D4"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandler42BEBAE0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandlerServiceRole5810CC58"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandlerServiceRoleDefaultPolicy8F64197B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandler7073F4DA"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleB1087139"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleDefaultPolicy2E7140AC"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisComplete26D7B0CB"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRole28643D26"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRoleDefaultPolicy2688969F"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeout0B47CA38"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRole0C7159F9"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRoleDefaultPolicyD3C3DA1A"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Providerwaiterstatemachine5D4A9DF0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/eksblueprintpipelinestacktestuseast1testuseast1blueprintawscdkawseksClusterResourceProviderframeworkonEvent11BC7AFDArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinestacktestuseast1testuseast1blueprintawscdkawseksClusterResourceProviderframeworkonEvent11BC7AFDArn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprintCreationRole0A0DD0C5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprintCreationRole0A0DD0C5Arn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksClusterResourceProviderNestedStackawscdkawseksClusterResourceProviderNestedStackResource9827C454"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Handler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HandlerServiceRoleFCDC14AE"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Handler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HandlerServiceRoleDefaultPolicyCBD0CC91"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Handler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Handler886CB40B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwsCliLayerF44AAF94"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/HasEcrPublic": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEcrPublic"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/eksblueprintpipelinestacktestuseast1testuseast1blueprintawscdkawseksKubectlProviderframeworkonEvent361898DFArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "eksblueprintpipelinestacktestuseast1testuseast1blueprintawscdkawseksKubectlProviderframeworkonEvent361898DFArn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprint6F4C7684Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprint6F4C7684Arn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprintCreationRole0A0DD0C5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprintCreationRole0A0DD0C5Arn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprintkubectllayer250ABD79D9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprintkubectllayer250ABD79D9Ref"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet1Subnet0E4F54E0Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet1Subnet0E4F54E0Ref"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet2Subnet29192310Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet2Subnet29192310Ref"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet3Subnet9FE5611FRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprinttestuseast1blueprintvpcPrivateSubnet3Subnet9FE5611FRef"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider/reference-to-eksblueprintpipelinestacktestuseast1testuseast1blueprint6F4C7684ClusterSecurityGroupId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoeksblueprintpipelinestacktestuseast1testuseast1blueprint6F4C7684ClusterSecurityGroupId"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksKubectlProviderNestedStackawscdkawseksKubectlProviderNestedStackResourceA7AEBA6B"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/AWSCDKCfnUtilsProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderRoleFE0EE867"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/AWSCDKCfnUtilsProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderHandlerCF82AA57"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/cert-manager-namespace-struct/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "certmanagernamespacestruct65ED8E81"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/adot-addon-otelPermissions/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotaddonotelPermissionsAC82D5F5"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/adot-addOn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "adotaddOn"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/appmesh-system-namespace-struct/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appmeshsystemnamespacestruct3C9AFC35"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/clusterName/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "clusterNameB220FB68"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/xray-system-namespace-struct/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraysystemnamespacestruct92DD4253"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/xray-daemon/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "xraydaemon34B4B4B6"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/argocd-namespace-struct/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "argocdnamespacestruct05557081"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/argocd-server-secret-provider-class ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "argocdserversecretproviderclass"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/team-platform-testAccessRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "teamplatformtestAccessRole1A18C529"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/team-platform-testAccessRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "teamplatformtestAccessRoleDefaultPolicy74EC2A13"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/platform-test team admin ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "platformtestteamadmin"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-frontendAccessRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemofrontendAccessRole633CF6FC"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-frontendAccessRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemofrontendAccessRoleDefaultPolicy5E61D6AD"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/frontend-test team role ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "frontendtestteamrole"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/frontend-test/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "frontendtest1A1FA418"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-frontend-rbac/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemofrontendrbac0F5CBD76"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/frontend-test-sa": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "frontendtestsa"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-nodejsAccessRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemonodejsAccessRole83EFDD90"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-nodejsAccessRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemonodejsAccessRoleDefaultPolicy6C99DF0D"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-nodejs-test team role ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendnodejstestteamrole"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-nodejs-test/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendnodejstest0E0EDA79"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-nodejs-rbac/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemonodejsrbacDB7D2676"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-nodejs-test-sa": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendnodejstestsa"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-crystalAccessRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemocrystalAccessRoleE9AD0BA8"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-crystalAccessRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemocrystalAccessRoleDefaultPolicyD5923B61"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-crystal-test team role ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendcrystaltestteamrole"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-crystal-test/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendcrystaltest36BD2C90"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/ecsdemo-crystal-rbac/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecsdemocrystalrbac2248AB8E"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/backend-crystal-test-sa": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "backendcrystaltestsa"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "eks-blueprint-pipeline-stack/test-us-east-1/test-us-east-1-blueprint"
+    }
+  }
+}
