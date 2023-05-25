@@ -7,7 +7,7 @@ import * as cdk from 'aws-cdk-lib';
 //-------------------------------------------
 const account = process.env.CDK_DEFAULT_ACCOUNT!;
 const region = process.env.CDK_DEFAULT_REGION!;
-const env: cdk.Environment = { account: account, region: region };
+const env: cdk.Environment = { account: account, region: 'eu-west-2' };
 const app = configureApp();
 
 
