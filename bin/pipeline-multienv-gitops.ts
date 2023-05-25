@@ -6,7 +6,7 @@ import * as cdk from 'aws-cdk-lib';
 // CDK Default Environment - default account and region
 const account = process.env.CDK_DEFAULT_ACCOUNT!;
 const region = process.env.CDK_DEFAULT_REGION!;
-const env: cdk.Environment = { account: account, region: 'eu-west-2' };
+const env: cdk.Environment = { account: account, region: region };
 
 const app = configureApp();
 // These different CDK environments are meant to be used for multi-region/account usage, 
